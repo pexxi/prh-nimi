@@ -1,0 +1,68 @@
+{
+	"name": "@pexxi/prh-nimi",
+	"version": "0.1.0",
+	"description": "CLI and library for the Finnish PRH Nimipalvelu name search (company names, trademarks, surnames, geographical names). Data provided by PRH, DVV, and Maanmittauslaitos.",
+	"keywords": [
+		"prh",
+		"nimipalvelu",
+		"finnish",
+		"trademark",
+		"tavaramerkki",
+		"toiminimi",
+		"name-search",
+		"open-data",
+		"cli"
+	],
+	"homepage": "https://github.com/pexxi/prh-nimi",
+	"bugs": {
+		"url": "https://github.com/pexxi/prh-nimi/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pexxi/prh-nimi.git"
+	},
+	"license": "MIT",
+	"author": "Pekka Kokkonen",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			}
+		}
+	},
+	"main": "./dist/index.cjs",
+	"types": "./dist/index.d.ts",
+	"bin": {
+		"nimi": "dist/cli.js"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"typecheck": "tsc --noEmit",
+		"nimi": "node dist/cli.js"
+	},
+	"dependencies": {
+		"cheerio": "^1.0.0",
+		"cli-table3": "^0.6.5",
+		"commander": "^14.0.3",
+		"zod": "^4.3.6"
+	},
+	"devDependencies": {
+		"@types/node": "^25.6.0",
+		"tsup": "^8.5.1",
+		"typescript": "^6.0.3"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"module": "./dist/index.js"
+}
