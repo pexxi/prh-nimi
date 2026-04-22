@@ -13,9 +13,9 @@ Use the `nimi` CLI to search Finnish registered names across four sources in one
 
 ## Prerequisites
 
-The `nimi` CLI must be installed: `npm install -g @pexxi/nimi`. Remember to verify from the user if they want to install the CLI.
+The `nimi` CLI must be installed: `npm install -g @pexxi/prh-nimi`. Remember to verify from the user if they want to install the CLI.
 
-Alternatively, `nimi` CLI can be used without installing: `npx @pexxi/nimi`. In this case, replace `nimi` with `npx @pexxi/nimi` in the examples below.
+Alternatively, `nimi` CLI can be used without installing: `npx @pexxi/prh-nimi`. In this case, replace `nimi` with `npx @pexxi/prh-nimi` in the examples below.
 
 ## Commands
 

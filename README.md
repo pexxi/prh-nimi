@@ -1,4 +1,4 @@
-# @pexxi/nimi
+# @pexxi/prh-nimi
 
 CLI and Agent skill for the Finnish PRH **Nimipalvelu** name search service.
 
@@ -12,15 +12,15 @@ Searches four Finnish name registers in one query:
 ## Usage with npx
 
 ```bash
-npx @pexxi/nimi search --name "Nokia"
-npx @pexxi/nimi search --name "Nokia" --type companies trademarks --format compact
-npx @pexxi/nimi search --name "Nokia" --format json --limit 20
+npx @pexxi/prh-nimi search --name "Nokia"
+npx @pexxi/prh-nimi search --name "Nokia" --type companies trademarks --format compact
+npx @pexxi/prh-nimi search --name "Nokia" --format json --limit 20
 ```
 
 ## Global Install
 
 ```bash
-npm install -g @pexxi/nimi
+npm install -g @pexxi/prh-nimi
 ```
 
 After installing globally, the `nimi` command is available directly:
@@ -56,11 +56,11 @@ For AI agent / automation consumption, use `--format compact` — it produces ta
 ## Library Usage
 
 ```bash
-npm install @pexxi/nimi
+npm install @pexxi/prh-nimi
 ```
 
 ```typescript
-import { NimiClient, parseSearchResults } from "@pexxi/nimi";
+import { NimiClient, parseSearchResults } from "@pexxi/prh-nimi";
 
 const client = new NimiClient();
 const html = await client.search("Nokia", "fi");
